@@ -23,6 +23,7 @@ import com.ibm.janusgraph.utils.importer.schema.SchemaLoader;
 public class BatchImport {
 
     public static void main(String args[]) throws Exception {
+        long t1 = System.currentTimeMillis();
 
         if (null == args || args.length < 4) {
             System.err.println(
@@ -36,5 +37,6 @@ public class BatchImport {
         new DataLoader(graph).loadVertex(args[1], args[3]);
         new DataLoader(graph).loadEdges(args[1], args[3]);
         graph.close();
+        System.err.println("导入数据耗时：" + (System.currentTimeMillis() - t1) / (1000) + "秒钟");
     }
 }

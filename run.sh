@@ -44,20 +44,27 @@ else
     echo "JanusGraph lib path is set to $JANUSGRAPH_HOME/lib"
 fi
 
+JVM_OPTS="-Xms4g -Xmx16g -server -XX:+AggressiveOpts -XX:MaxMetaspaceSize=256m"
+
+
 CP="${sDir}/lib/commons-csv-1.4.jar:${sDir}/conf:${JANUSGRAPH_HOME}/lib/*"
 class=$1
 case $class in
     gencsv)
         shift
-        java -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.generator.JanusGraphBench "$@"
+        java ${JVM_OPTS} -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.generator.JanusGraphBench "$@"
         ;;
     import)
         shift
-        java -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.importer.BatchImport "$@"
+        java ${JVM_OPTS} -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.importer.BatchImport "$@"
         ;;
     loadsch)
         shift
-        java -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.importer.schema.SchemaLoader "$@"
+        java ${JVM_OPTS} -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.importer.schema.SchemaLoader "$@"
+        ;;
+    ctdata)
+        shift
+        java -cp "$CP":"${utilityJar}" com.ibm.janusgraph.utils.importer.ConvertTicketData "$@"
         ;;
     *)
         usage      # unknown option
@@ -66,4 +73,6 @@ esac
 #java -cp $CP:target/JanusGraphBench-0.0.1-SNAPSHOT.jar com.ibm.janusgraph.utils.importer.BatchImport $@
 #java -cp $CP:target/JanusGraphBench-0.0.1-SNAPSHOT.jar com.ibm.janusgraph.utils.importer.schema.SchemaLoader $@
 #java -cp $CP:target/JanusGraphBench-0.0.1-SNAPSHOT.jar com.ibm.janusgraph.utils.generator.JanusGraphBench $@
+#java -cp $CP:target/JanusGraphBench-0.0.1-SNAPSHOT.jar com.ibm.janusgraph.utils.importer.ConvertTicketData $@
+
 

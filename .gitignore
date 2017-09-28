@@ -5,3 +5,4 @@ bin/
 .groovy/
 target/
 lib/
+.idea

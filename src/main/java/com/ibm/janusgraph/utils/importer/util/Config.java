@@ -21,7 +21,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class Config {
-    private Properties properties = null;
+    private Properties properties = new Properties();
     private String availProcessors = null;
 
     private static Config config = null;
@@ -60,28 +60,28 @@ public class Config {
     }
 
     public Properties getProperties() {
+        if(properties ==null){
+            properties =  new Properties();
+        }
         return properties;
     }
 
     public int getWorkersTargetRecordCount() {
-        return properties == null ? null
-                : new Integer(properties.getProperty("workers.target_record_count",
+        return new Integer(getProperties().getProperty("workers.target_record_count",
                         Constants.DEFAULT_WORKERS_TARGET_RECORD_COUNT.toString()));
     }
 
     public int getWorkers() {
-        return properties == null ? null : new Integer(properties.getProperty("workers", availProcessors));
+        return new Integer(getProperties().getProperty("workers", availProcessors));
     }
 
     public int getVertexRecordCommitCount() {
-        return properties == null ? null
-                : new Integer(properties.getProperty("vertex.record_commit_count",
+        return new Integer(getProperties().getProperty("vertex.record_commit_count",
                         Constants.DEFAULT_VERTEX_COMMIT_COUNT.toString()));
     }
 
     public int getEdgeRecordCommitCount() {
-        return properties == null ? null
-                : new Integer(properties.getProperty("edge.record_commit_count",
+        return new Integer(getProperties().getProperty("edge.record_commit_count",
                         Constants.DEFAULT_EDGE_COMMIT_COUNT.toString()));
     }
 }

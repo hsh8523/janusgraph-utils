@@ -45,9 +45,9 @@ public class BatchHelper {
             }
             // Only numbers Hour / Minute format
             dateParser = new SimpleDateFormat("Hm");
-        } else if (inputDate.matches("[0-9]{2}-[A-Za-z]{3}-[0-9]{4}")) {
+        } else if (inputDate.matches("[0-9]{2}-[0-9]{2}-[0-9]{4}")) {
             // Use dd-MMM-yyyy format
-            dateParser = new SimpleDateFormat("dd-MMM-yyyy");
+            dateParser = new SimpleDateFormat("dd-MM-yyyy");
         } else if (inputDate.matches("[0-9]{4}-[0-9]{2}-[0-9]{2}")) {
             // Use yyyy-mm-dd format
             dateParser = new SimpleDateFormat("yyyy-mm-dd");

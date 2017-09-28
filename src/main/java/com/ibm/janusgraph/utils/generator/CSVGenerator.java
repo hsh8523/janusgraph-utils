@@ -17,13 +17,13 @@ package com.ibm.janusgraph.utils.generator;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import org.apache.commons.csv.CSVFormat;
@@ -46,11 +46,25 @@ public class CSVGenerator {
     private CSVFormat csvFileFormat = CSVFormat.DEFAULT.withRecordSeparator("\n");
     private CSVConfig csvConf = null;
     private CSVIdBean idFactory = null;
-    private Calendar cal = Calendar.getInstance();
-    private long CURRENT_TIME = cal.getTimeInMillis();
-    private int[] RANDDOM_INT_RANGE = {100000,99999999};
+    //private Calendar cal = Calendar.getInstance();
+   // private long CURRENT_TIME = cal.getTimeInMillis();
+    private static final ThreadLocal<Calendar> CAL_THREAD_LOCAL = new ThreadLocal<Calendar>(){
+        @Override
+        protected Calendar initialValue() {
+            return  Calendar.getInstance();
+        }
+    };
+
+    private long CURRENT_TIME = CAL_THREAD_LOCAL.get().getTimeInMillis();
     private long[] RANDOM_TIME_RANGE = {(long)0, CURRENT_TIME};
-    private SimpleDateFormat TIME_FORMAT = new SimpleDateFormat("dd-MMM-yyyy");
+    private int[] RANDDOM_INT_RANGE = {100000,99999999};
+
+    private static final ThreadLocal<SimpleDateFormat> DATE_FORMAT_THREAD_LOCAL = new ThreadLocal<SimpleDateFormat>(){
+        @Override
+        protected SimpleDateFormat initialValue() {
+            return  new SimpleDateFormat("dd-MM-yyyy");
+        }
+    };
 
     /**
      * Initialize csv generator
@@ -66,54 +80,60 @@ public class CSVGenerator {
      * @param columns a ColumnBean
      * @return an array containing files for a record
      */
+    Faker faker = new Faker(Locale.CHINA);
     private ArrayList<Object> generateOneRecord(Map<String,ColumnBean> columns){
         ArrayList<Object> rec = new ArrayList<Object>();
-        
-        columns.forEach( (name, value) -> {
-            if (value.dataType.toLowerCase().equals("integer") 
+        try{
+            columns.forEach( (name, value) -> {
+                if (value.dataType.toLowerCase().equals("integer")
                     || value.dataType.toLowerCase().equals("long")){
-                rec.add(RandomUtils.nextInt(RANDDOM_INT_RANGE[0],RANDDOM_INT_RANGE[1]));
-            }else if (value.dataType.toLowerCase().equals("date")){
-                if (value.dateFormat != null) {
-                    this.TIME_FORMAT.applyPattern(value.dateFormat);
-                }
-                if (value.dateRange != null) {
-                    try {
-                        this.RANDOM_TIME_RANGE[0] =
-                                TIME_FORMAT.parse(value.dateRange.get("from")
-                                            ).getTime();
-                        this.RANDOM_TIME_RANGE[1] =
-                                TIME_FORMAT.parse(value.dateRange.get("to")
-                                            ).getTime();
-                    } catch (ParseException e) {
-                        throw new RuntimeException(e.getMessage() +
-                                ". the date cannot be parse using " +
-                                TIME_FORMAT.toPattern());
+                    rec.add(RandomUtils.nextInt(RANDDOM_INT_RANGE[0],RANDDOM_INT_RANGE[1]));
+                }else if (value.dataType.toLowerCase().equals("date")){
+                    if (value.dateFormat != null) {
+                        this.DATE_FORMAT_THREAD_LOCAL.get().applyPattern(value.dateFormat);
                     }
-                }
-                cal.setTimeInMillis(
+                    if (value.dateRange != null) {
+                        String fromValue = value.dateRange.get("from");
+                        String toValue = value.dateRange.get("to");
+                        try {
+                            this.RANDOM_TIME_RANGE[0] =
+                                DATE_FORMAT_THREAD_LOCAL.get().parse(fromValue).getTime();
+
+                            this.RANDOM_TIME_RANGE[1] =
+                                DATE_FORMAT_THREAD_LOCAL.get().parse(toValue).getTime();
+                        } catch (Throwable e) {
+                            throw new RuntimeException(e.getMessage() +
+                                                           ". the date cannot be parse using " +
+                                                           DATE_FORMAT_THREAD_LOCAL.get().toPattern());
+                        }
+                    }
+                    CAL_THREAD_LOCAL.get().setTimeInMillis(
                         RandomUtils.nextLong(this.RANDOM_TIME_RANGE[0],
                                              this.RANDOM_TIME_RANGE[1]));
-                    rec.add(TIME_FORMAT.format(cal.getTime()).toString());
-            }
-            else{
-                if ( value.dataSubType != null && value.dataSubType.toLowerCase().equals("name")) {
-                    Faker faker = new Faker();
-                    rec.add(faker.name().fullName());
-                }else if (value.dataSubType != null && value.dataSubType.toLowerCase().equals("shakespeare")) {
-                    Faker faker = new Faker();
-                    Map<Integer, Runnable> roles = new HashMap<>();
-                    // Populate commands map
-                    roles.put(1, () -> rec.add(faker.shakespeare().asYouLikeItQuote()));
-                    roles.put(2, () -> rec.add(faker.shakespeare().hamletQuote()));
-                    roles.put(3, () -> rec.add(faker.shakespeare().kingRichardIIIQuote()));
-                    roles.put(4, () -> rec.add(faker.shakespeare().romeoAndJulietQuote()));
-                    roles.get(RandomUtils.nextInt(1,5)).run();
-                }else {
-                    rec.add(RandomStringUtils.randomAlphabetic(10));
+                    rec.add(DATE_FORMAT_THREAD_LOCAL.get().format(CAL_THREAD_LOCAL.get().getTime()).toString());
                 }
-            }
-        });
+                else{
+                    if ( value.dataSubType != null && value.dataSubType.toLowerCase().equals("name")) {
+                        //Faker faker = new Faker(Locale.CHINA);
+                        rec.add(faker.name().fullName());
+                    }else if (value.dataSubType != null && value.dataSubType.toLowerCase().equals("shakespeare")) {
+                        //Faker faker = new Faker(Locale.CHINA);
+                        Map<Integer, Runnable> roles = new HashMap<>();
+                        // Populate commands map
+                        roles.put(1, () -> rec.add(faker.shakespeare().asYouLikeItQuote()));
+                        roles.put(2, () -> rec.add(faker.shakespeare().hamletQuote()));
+                        roles.put(3, () -> rec.add(faker.shakespeare().kingRichardIIIQuote()));
+                        roles.put(4, () -> rec.add(faker.shakespeare().romeoAndJulietQuote()));
+                        roles.get(RandomUtils.nextInt(1,5)).run();
+                    }else {
+                        rec.add(RandomStringUtils.randomAlphabetic(10));
+                    }
+                }
+            });
+
+        }catch (Throwable throwable){
+            throwable.printStackTrace();
+        }
         return rec;
     }
     /**

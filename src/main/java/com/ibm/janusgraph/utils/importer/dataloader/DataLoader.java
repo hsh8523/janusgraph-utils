@@ -55,7 +55,7 @@ public class DataLoader {
     public void loadData(String filesDirectory, String mappingFile, String mapToLoad, Class<Worker> workerClass)
             throws Exception {
         long startTime = System.nanoTime();
-        log.info("Start loading data for " + mapToLoad);
+        log.info("Start load data for " + mappingFile);
 
         // Read the mapping json
         String mappingJson = new String(Files.readAllBytes(Paths.get(mappingFile)));

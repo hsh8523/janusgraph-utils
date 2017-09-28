@@ -1,0 +1,1417 @@
+{
+  "propertyKeys": [
+    {
+      "name": "lastscodeofstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "clientid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "grp_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_bkg_stat_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "incomepayed",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "memo2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_fr_bs_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "passengerid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_rcd_dt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "counterstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_arrv_tm",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_grp_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "freebaggageallowance",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "exng_tkt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pmt_info_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pmt_info_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "aircrafttype",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fee_a",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fee_c",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "carr_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "active",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flightnums",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fst_tkt_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkg_sub_cls_cd_all",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pnr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "clientsettlecode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "drawer_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "isexchange",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "conjct_tkt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastmdateofaudit",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "z_comms_rt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_airln_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pmt_typ_frm_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_airpt_cd_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketyszk",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_airpt_cd_4",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_airpt_cd_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_airpt_cd_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "syscode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "b2b_update_status",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "eticketflag",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pmt_acct_nbr_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "audit",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "departmentcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "skywayid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "zval",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "backmoney",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "receiptnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "totalprice",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cdshr_airln_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cp_tax_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_gross_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lcd_dpt_dt_ecp_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "node_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "insurance",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bop_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "taxamount3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "comms_rt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn4_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "countrycode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_bcv",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr_4",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rfnd_flag",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "returnnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_cd_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "eqt_fr_paid_crncy_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_cd_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_cd_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "engflights",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "taxamount1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_use_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "taxamount2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "takeoffdate",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lcd_dpt_dt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "airflightcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "purchasedcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "groupid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "et_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "arrv_airpt_cd_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "arrv_airpt_cd_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_dt_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "arrv_airpt_cd_4",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_dt_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "arrv_airpt_cd_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_dt_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "firstticketid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "passengername",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_dt_4",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_iss_dt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "shengyi_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_cpn_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "asct_tkt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "income",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fst_tkt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "classes",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastdateofaudit",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_statis_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "nr_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "invoicenum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pay_bank",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "booking_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketcurrency",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticket_dori",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bsp_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "conjct_tkt_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "extendair_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tru_orgn_dest",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tickettype",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dev_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastdateofstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "iss_tkt_pid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "checknum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketfullnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cp_tax_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_bkg_agt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "returnflight",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pnr_ref",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "phonenum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fix_comms_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pax_typ_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_disc_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "commissionrate",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cashamount",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_tkg_offc_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "exchange_update_status",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "exng_tkt_nbr_final",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_amt_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "sale_channel",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_amt_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn_1_oth_pnr_ref",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "pmt_typ_cd_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "discount",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastmdateofstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "memo",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "frn_seg_cnt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "z_comms_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tax_amt_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "phonetype",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "conjct_tkt_tot_qty",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "yrfee",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "reserveddate",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn_current_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_fr_bs",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_tkg_agt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bank_booking_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "couponstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastmdateofpay",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_tax_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkg_offc_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "usestatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cdshr_flt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastdateofpay",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn2_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cashcurrency",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "uncouponflag",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "classofservice",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_dpt_tm",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "status",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "upbuild",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tk_sub_cls_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "totalcurrency",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "farebsis",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "fr_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "sellcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "officecode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn3_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_fr_crncy_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "table_join_type_b",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "settleaccountsnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "table_join_type_a",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rq_seg_cnt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "payoff",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "clid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_fmt_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "data_sources",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cardnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_bkg_dt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "xinga_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "paymentid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flt_nbr_sfx",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketsendercode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "xingji_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "indicator",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "airln_cd_3",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "airln_cd_4",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_auto_acct_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "eqt_fr_paid_crncy_cd_orig",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "airln_cd_1",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "airln_cd_2",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "continueflag",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "gp_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn1_state",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "stopover",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_net_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bspsettledate",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "dpt_airpt_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "prc_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cities",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "settleunitid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "smallsun_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bookingdate",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "expense",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "total_tax",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "yqfee",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "printernum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tourcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "arrv_airpt_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "vip_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_ecp_id_a",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketprice",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_ecp_id_b",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "endr_restrc",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "bookingstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "rmk_bkg_offc_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tour_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "serialno",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_crncy_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "comms_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "operatetime",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketnum_ex",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "creditnum",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "b2b_sales_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "apply_id",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "settlecode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cardtype",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketformula",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastscodeofaudit",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_comms_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "seg_cnt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_txn_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flightstatus",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkg_agt_nbr",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "eqt_fr_paid_amt",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ddd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "conjct_tkt_rltv",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "traveltype",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "aircorpcode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "et_stat_cd",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "zvalue",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "departuretime",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "cpn_usg_typ",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "tkt_crncy_cd_orig",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "salescode",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "iffetch",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flightflag",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "lastscodeofpay",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "sale_typ",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "yeexing_ind",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "flights",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    },
+    {
+      "name": "ticketdetailid",
+      "dataType": "String",
+      "cardinality": "SINGLE"
+    }
+  ],
+  "vertexLabels": [
+    {
+      "name": "Center",
+      "partition": false,
+      "useStatic": false
+    },
+    {
+      "name": "Flight",
+      "partition": false,
+      "useStatic": false
+    },
+    {
+      "name": "Detail",
+      "partition": false,
+      "useStatic": false
+    },
+    {
+      "name": "Usage",
+      "partition": false,
+      "useStatic": false
+    }
+  ],
+  "edgeLabels": [
+    {
+      "name": "center_to_flight",
+      "multiplicity": "MULTI",
+      "signatures": null,
+      "unidirected": false
+    },
+    {
+      "name": "center_to_detail",
+      "multiplicity": "MULTI",
+      "signatures": null,
+      "unidirected": false
+    },
+    {
+      "name": "detail_to_usage",
+      "multiplicity": "MULTI",
+      "signatures": null,
+      "unidirected": false
+    }
+  ],
+  "vertexIndexes": [
+    {
+      "name": "node_id_comp",
+      "propertyKeys": [
+        "node_id"
+      ],
+      "composite": true,
+      "unique": true
+    },{
+      "name":"passengername_comp",
+      "propertyKeys":[
+        "passengername"
+      ],
+      "composite": true,
+      "unique": false
+    },
+    {
+           "name" : "passengername_mixed",
+           "propertyKeys" : [ "passengername" ],
+          "composite" : false,
+          "unique" : false,
+          "mixedIndex" : "search"
+    },
+    {
+      "name":"flights_comp",
+      "propertyKeys":[
+        "flights"
+      ],
+      "composite": true,
+      "unique": false
+    },
+    {
+      "name" : "flights_mixed",
+      "propertyKeys" : [ "flights" ],
+      "composite" : false,
+      "unique" : false,
+      "mixedIndex" : "search"
+    },
+    {
+      "name":"tkt_airln_nbr_comp",
+      "propertyKeys":[
+        "tkt_nbr"
+      ],
+      "composite": true,
+      "unique": false
+    },
+    {
+      "name" : "tkt_airln_nbr_mixed",
+      "propertyKeys" : [ "tkt_nbr" ],
+      "composite" : false,
+      "unique" : false,
+      "mixedIndex" : "search"
+    },
+    {
+      "name":"ticketfullnum_comp",
+      "propertyKeys":[
+        "ticketfullnum"
+      ],
+      "composite": true,
+      "unique": false
+    },
+    {
+      "name" : "ticketfullnum_mixed",
+      "propertyKeys" : [ "ticketfullnum" ],
+      "composite" : false,
+      "unique" : false,
+      "mixedIndex" : "search"
+    }
+  ],
+  "edgeIndexes": [],
+  "vertexCentricIndexes": []
+}
